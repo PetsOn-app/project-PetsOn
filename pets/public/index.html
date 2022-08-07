@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CORS FRONT-END </title>
+    
+    <!--Criando ICON, para que pare de dar ruim-->
+    <link rel="shortcut icon" href="#" >
+
+    <script>
+
+        //Função para acessar e consumir os dados do Back-end:
+        async function acessandoDadosBack() {
+            //Criando o acesso externo:
+            let response = await fetch('http://localhost:3335/routes/');
+            console.log(response);
+        }
+
+        //Exportando a função criada:
+        acessandoDadosBack();
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
